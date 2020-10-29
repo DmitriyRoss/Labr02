@@ -19,12 +19,13 @@
 /**
  * Кількість тварин у масиві
  */
-#define ANIMAL_COUNT 10
+#define ANIMAL_COUNT 15
 
 /**
  * Тип тварини
  */
 enum animal_type {
+        HUMAN, /**<Chelovek */
 	PIG, /**< Свиня */
 	COW, /**< Корова */
 	DOG, /**< Собака */
@@ -39,6 +40,7 @@ struct animal {
 	enum animal_type type; /**< тип тварини */
 	unsigned int height; /**< ріст тварини, см */
 	unsigned int weight; /**< маса тварини, грам */
+	unsigned int sound; /**< sound of animal*/
 };
 
 /**
